@@ -7,3 +7,6 @@ $(PROJNAME):src/$(PROJNAME).c
 
 test:$(PROJNAME)
 	./bin/$(PROJNAME) < ./test_input.txt
+
+clean:
+	rm ./bin/$(PROJNAME)
