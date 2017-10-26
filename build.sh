@@ -2,8 +2,10 @@
 
 # Travis Automatic Build Script
 
-# Find subdirectories with makefiles (which we can then test)
-BUILDABLE_DIRS=`find . -name '*akefile' | grep -v './Template' | awk '{gsub(/[^\/]*$/,"");print}'`
+BLACKLIST="./Template"
+
+# Find subdirectories with makefiles (which we can then test), excluding the blacklist
+BUILDABLE_DIRS=`find . -name '*akefile' | grep -v $BLACKLIST | awk '{gsub(/[^\/]*$/,"");print}'`
 
 for SUBDIR in $BUILDABLE_DIRS;
 do
@@ -12,7 +14,8 @@ cd $SUBDIR
 
 MAKEFILE=`cat *akefile`
 
-echo $SUBDIR
+echo "---------------------------------------------------------"
+echo -e "\t ** NOW BUILDING: $SUBDIR **"
 
   # Run make clean, if rule exists
   if [ "$(echo "$MAKEFILE" | awk '$0 ~ /^all[\t ]*:/ {print}')" != "" ]
@@ -31,6 +34,8 @@ echo $SUBDIR
   then
     make clean
   fi
+
+echo "---------------------------------------------------------"
 
 cd ..
 
