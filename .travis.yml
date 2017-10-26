@@ -1,5 +1,11 @@
 language: C
 script: ./build.sh
+sudo: true
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq scan-build
+
 notifications:
   slack:
     secure: fGrmYyb3AncYwY0Q6x8ZlUbuTjSosDTirHWmjhXkZdzF7Lr+Pgma+hJMdxfbu76F1EgYoYRoy8EfTuDwqi+fJi+pHeTnEp0rLpJsOhA/XuF44hx0wCXLWpxJ59v35jfiqQmjrkbTdOELkxXBgzAB4RITKqbNwOnlHzVGBviqZ2G/IzkoJW4Cmh8Zve213e/LcZsEb8ljitFNeeMr6vuyHz+lPoUTyQZROHaTv/QDxK+kHJVuRtZ/j5EBNhhFRkfRxm9EzVPWu9HsRMBPtJtA/jQCAgJ72PxWzAMydxHbej2Al4QOZFZMsp/eF9/8bCuQDxHIXfRe/a2Cd/wujRYeY4/UQbH02SJ+DmRI9RWeYB2Vakob5QlvTs6tNu1GznOBJV03xewlBPR48qIAaOQjEInlmyS7DnooQs2AiK7xOj3OFwMVb7kc1cZFK9gcD/lRKyMNshF0/IJfD5o9z9GOS06EKckFqQIRsBrsRJdhreMGKItzUIN9WiyIHMSHPDBFPXbuUUQdu0UOu/lsiq5QKsrR7U4HvCGtLLOmsYdapQx58IWi3/xTSAzhguA3n8Pu4jFmu/6pKEwWmqxKx5vD9UXGzFFq86sLkTTgjvbLf0bw2/4wzjhrv2KTDASItcJ9RJnQlENgJyzUTFiMQoyPoe43DmnP6P/6BpE+5nX8SNI=
