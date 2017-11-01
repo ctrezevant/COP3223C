@@ -1,4 +1,4 @@
-PROJNAME = test
+PROJNAME = testable
 
 all:$(PROJNAME)
 

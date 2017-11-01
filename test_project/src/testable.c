@@ -5,5 +5,5 @@
 #include <stdio.h>
 
 int main(){
-  build fail test
+  return 0;
 }
