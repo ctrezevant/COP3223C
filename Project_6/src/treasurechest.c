@@ -1,6 +1,6 @@
 /*
   COP 3223C - Project 6
-  Charlton Trezevant
+  Charlton Trezevant - 2017
   Professor Sarah Angell
 
   Assignment #6 (treasurechest.c)
