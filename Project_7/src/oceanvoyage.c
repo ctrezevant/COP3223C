@@ -216,8 +216,8 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 void dailyreport(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int funds, int traveled) {
   printf("You have traveled %d miles.", traveled);
   printstatus(crewnames, crewstatus);
-  printf("You have %d gold pieces.", funds);
-  
+  printf("\nYou have %d gold pieces.", funds);
+
 
 }
 
@@ -262,7 +262,7 @@ void rest(int supplies[NUMSUPPLIES], char crewnames[NUMCREW][STRLENGTH], int cre
 //  this value.
 int fish() {
   int fish_amount = (rand() % 3) * 50;
-  printf("You caught %d fish today!", fish_amount);
+  printf("Your crew lowers the nets and pulls up %d pounds of fish.", fish_amount);
   return fish_amount;
 }
 
@@ -300,5 +300,95 @@ int fish() {
 
 //  For any days spent in this way, deduct 2 pounds of food per crew member per day.
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]) {
+  int event = rand() % 9;
+  int days_spent = 0;
+  int crew_food_consumption = 0;
+
+  if(supplies[0] < 1){
+    printf("You have no food.");
+    if(event + 2 < 9)
+      event += 2;
+  }
+
+  switch(event){
+    case 3: { // Gain parts
+      int gained_parts = (rand() % 4);
+      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d extra ship parts. You spend the day recovering.", gained_parts);
+      supplies[2] += gained_parts;
+      days_spent++;
+      break;
+    }
+
+    case 4: { // Gain food
+      int food_gained = (rand() % 6) * 10;
+      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d pounds of their food. You spend the day recovering.", food_gained);
+      supplies[0] += food_gained;
+      days_spent++;
+      break;
+    }
+
+    case 5: { // Lose food
+      int food_lost = ((rand() % 5) * 10) + 5;
+      printf("Another pirate ship pulls alongside and attacks!\nThey took %d pounds of food and you spend the day recovering.", food_lost);
+      supplies[0] -= food_lost;
+      days_spent++;
+      break;
+    }
+
+    case 6: { // Ship stuck in fog
+      printf("Fog surrounds your ship.  Drop anchor for one day.");
+      days_spent += 2;
+      break;
+    }
+
+    case 7: { // Ship stuck in fog
+      printf("An ocean storm batters your ship.  Drop anchor for two days.");
+      days_spent++;
+      break;
+    }
+
+    case 8: { // Broken parts
+      printf("A part of your ship has broken!");
+
+      if(supplies[2] > 0) {
+        printf("You replace the broken part. It takes one day.");
+        days_spent++;
+      } else {
+        printf("You have no replacement parts.  It takes three days to repair.");
+        days_spent += 3;
+      }
+
+      break;
+    }
+
+    case 9: { // Illness
+      int unlucky_index = rand() % NUMCREW;
+      int* unlucky_person = &crewstatus[unlucky_index];
+
+      if(*unlucky_person > 0) {
+        *unlucky_person = *unlucky_person - 1;
+      } else {
+        break;
+      }
+
+      if(*unlucky_person == 0){
+        printf("%s has died.", crewnames[unlucky_index]);
+      } else {
+        printf("%s has fallen ill.", crewnames[unlucky_index]);
+      }
+
+      break;
+    }
+
+    default:
+      break;
+  }
+
+  for(int i = 0; i < NUMCREW; i++){
+    if(crewstatus[i] > 0)
+      crew_food_consumption += 2 * days_spent;
+  }
+
+  supplies[0] -= crew_food_consumption;
 
 }
