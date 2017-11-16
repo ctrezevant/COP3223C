@@ -34,6 +34,9 @@ int max(int a, int b);
 int min(int a, int b);
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]);
 
+// Below are prototypes for helper functions that I have written
+int feed_crew();
+
 //Main function - This is the final version of main.  Any changes you make while
 //creating the functions should be removed prior to submission.
 int main(void) {
@@ -281,6 +284,19 @@ int min(int a, int b) {
 //  If they are healthy or deceased, nothing happens.  If the first number is a 0,
 //  nothing happens.
 void rest(int supplies[NUMSUPPLIES], char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days) {
+  int num_resting_days;
+  scanf("How many days would you like to rest for? \n%d", &num_resting_days);
+
+  *days += num_resting_days;
+
+  supplies[0] -= feed_crew(num_resting_days, 2, &crewstatus);
+
+  if(rand() % 1 == 1){
+    int candidate = rand() % NUMCREW;
+
+    if(crewstatus[candidate] != 0)
+      crewstatus[candidate] = 2;
+  }
 
 }
 
@@ -332,7 +348,6 @@ int fish() {
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]) {
   int event = rand() % 9;
   int days_spent = 0;
-  int crew_food_consumption = 0;
 
   if(supplies[0] < 1){
     printf("You have no food.");
@@ -414,12 +429,19 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
       break;
   }
 
-  for(int i = 0; i < NUMCREW; i++){
-    if(crewstatus[i] != 0)
-      crew_food_consumption += 2 * days_spent;
-  }
-
-  supplies[0] -= crew_food_consumption;
+  supplies[0] -= feed_crew(days_spent, 2, &crewstatus);
   *days += days_spent;
 
+}
+
+// Helper function which calculates the total amount of food consumed by all living members of the crew.
+int feed_crew(int num_days, int food_per_member, int* crewstatus){
+  int total_food_consumed = 0;
+
+  for(int i = 0; i < NUMCREW; i++){
+    if(crewstatus[i] != 0)
+      total_food_consumed += food_per_member * num_days;
+  }
+
+  return total_food_consumed;
 }
