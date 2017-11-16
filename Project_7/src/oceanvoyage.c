@@ -153,6 +153,36 @@ int main(void) {
 //  Set the initial amount of supplies to be 0 for each supply
 void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int *captaintype, int *funds, int *distanceperday) {
 
+  printf("How will you travel?\n1 - As a merchant\n2 - As a privateer\n3 - As a pirate");
+  scanf("\n %d", captaintype);
+
+  switch(*captaintype){
+    case 1:
+      *funds = 1000;
+      *distanceperday = 80;
+      break;
+
+    case 2:
+      *funds = 900;
+      *distanceperday = 90;
+      break;
+
+    case 3 :
+      *funds = 800;
+      *distanceperday = 100;
+      break;
+  }
+
+  scanf("\nWhat is your name, Captain? \n%s", &crewnames[0]);
+
+  for(int i = 1; i < NUMCREW; i++)
+    scanf("%d:%s\n", &i, &crewnames[i]);
+
+  for(int i = 0; i < NUMCREW; i++)
+    crewstatus[i] = 2;
+
+  for(int i = 0; i < NUMSUPPLIES; i++)
+    supplies[i] = 0;
 }
 
 //Pre-conditions:  crewstatus is an array of numerical indicators for the status of each crew member
@@ -385,10 +415,11 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
   }
 
   for(int i = 0; i < NUMCREW; i++){
-    if(crewstatus[i] > 0)
+    if(crewstatus[i] != 0)
       crew_food_consumption += 2 * days_spent;
   }
 
   supplies[0] -= crew_food_consumption;
+  *days += days_spent;
 
 }
