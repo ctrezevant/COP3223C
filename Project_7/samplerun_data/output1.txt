@@ -1,0 +1,1946 @@
+You may now take your ship and crew from Port Marin, Spain to the hidden island in the Caribbean on the old pirate's map.
+
+How will you travel?
+1 - As a merchant
+2 - As a privateer
+3 - As a pirate
+1
+As a merchant, you begin your trip with 1000 gold pieces.
+You will be sailing your Carrack, with an average speed of 80 miles per day.
+
+What is your name, Captain?
+Sarah
+Who are the other members of your crew?
+1:Tyler
+2:Patrick
+3:Mesut
+4:Zack
+
+Before leaving Port Marin, you should purchase some supplies.
+
+You have 1000 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+4
+How many shovels do you want to buy?
+5
+
+You have 950 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+3
+How many extra ship parts do you want to buy?
+6
+
+You have 830 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+2
+How many sets of clothes do you want to buy?
+5
+
+You have 820 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+1
+How many pounds of food do you want to buy?
+800
+
+You have 20 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+3
+How many extra ship parts do you want to buy?
+4
+Sorry, you cannot afford that many ship parts.
+
+You have 20 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+5
+
+
+--It is day #1.--
+You have traveled 0 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 800 pounds of food.
+You are 1261 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 4 extra ship parts. You spend the day recovering.
+
+
+--It is day #3.--
+You have traveled 80 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 790 pounds of food.
+You are 1181 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Patrick has fallen ill.
+
+
+--It is day #4.--
+You have traveled 160 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Ill
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 780 pounds of food.
+You are 1101 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320Patrick has recovered.
+
+
+--It is day #5.--
+You have traveled 160 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 770 pounds of food.
+You are 1101 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #7.--
+You have traveled 240 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 750 pounds of food.
+You are 1021 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #9.--
+You have traveled 320 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 730 pounds of food.
+You are 941 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #10.--
+You have traveled 400 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 720 pounds of food.
+You are 861 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #12.--
+You have traveled 480 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 700 pounds of food.
+You are 781 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #15.--
+You have traveled 560 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 670 pounds of food.
+You are 701 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #17.--
+You have traveled 640 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 650 pounds of food.
+You are 621 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #18.--
+You have traveled 720 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 640 pounds of food.
+You are 541 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Tyler has fallen ill.
+
+
+--It is day #19.--
+You have traveled 800 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 630 pounds of food.
+You are 461 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #21.--
+You have traveled 880 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 610 pounds of food.
+You are 381 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #22.--
+You have traveled 880 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 600 pounds of food.
+You are 381 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #23.--
+You have traveled 880 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 590 pounds of food.
+You are 381 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #24.--
+You have traveled 880 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 580 pounds of food.
+You are 381 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #25.--
+You have traveled 960 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Healthy
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 570 pounds of food.
+You are 301 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Mesut has fallen ill.
+
+
+--It is day #26.--
+You have traveled 1040 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 560 pounds of food.
+You are 221 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320Tyler has recovered.
+
+
+--It is day #27.--
+You have traveled 1040 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 550 pounds of food.
+You are 221 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #28.--
+You have traveled 1040 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 540 pounds of food.
+You are 221 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 30 pounds of their food. You spend the day recovering.
+
+
+--It is day #30.--
+You have traveled 1120 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 560 pounds of food.
+You are 141 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 1 extra ship parts. You spend the day recovering.
+
+
+--It is day #32.--
+You have traveled 1200 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 550 pounds of food.
+You are 61 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #33.--
+You have arrived at the Canary Islands.
+Would you like to make port? (Y/N)
+N
+
+
+--It is day #34.--
+You have traveled 1341 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 540 pounds of food.
+You are 3030 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #35.--
+You have traveled 1341 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 530 pounds of food.
+You are 3030 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #36.--
+You have traveled 1341 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 520 pounds of food.
+You are 3030 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #37.--
+You have traveled 1341 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 510 pounds of food.
+You are 3030 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #38.--
+You have traveled 1421 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 500 pounds of food.
+You are 2950 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #40.--
+You have traveled 1501 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 480 pounds of food.
+You are 2870 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #42.--
+You have traveled 1581 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 460 pounds of food.
+You are 2790 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #44.--
+You have traveled 1661 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 440 pounds of food.
+You are 2710 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #46.--
+You have traveled 1741 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 420 pounds of food.
+You are 2630 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 1 extra ship parts. You spend the day recovering.
+
+
+--It is day #48.--
+You have traveled 1821 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 410 pounds of food.
+You are 2550 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Sarah has fallen ill.
+
+
+--It is day #49.--
+You have traveled 1901 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 400 pounds of food.
+You are 2470 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #50.--
+You have traveled 1901 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 390 pounds of food.
+You are 2470 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #51.--
+You have traveled 1901 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 380 pounds of food.
+You are 2470 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #52.--
+You have traveled 1901 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 370 pounds of food.
+You are 2470 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #54.--
+You have traveled 1981 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 350 pounds of food.
+You are 2390 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #56.--
+You have traveled 2061 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 330 pounds of food.
+You are 2310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+1
+Your crew lowers the nets and pulls up 150 pounds of fish.
+
+
+--It is day #57.--
+You have traveled 2061 miles.
+Sarah: Ill
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 480 pounds of food.
+You are 2310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320Sarah has recovered.
+
+
+--It is day #58.--
+You have traveled 2061 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 470 pounds of food.
+You are 2310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 13 pounds of food and you spend the day recovering.
+
+
+--It is day #60.--
+You have traveled 2141 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 447 pounds of food.
+You are 2230 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 2 extra ship parts. You spend the day recovering.
+
+
+--It is day #62.--
+You have traveled 2221 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 437 pounds of food.
+You are 2150 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #63.--
+You have traveled 2301 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Ill
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 427 pounds of food.
+You are 2070 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Mesut has died.
+
+
+--It is day #64.--
+You have traveled 2381 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 417 pounds of food.
+You are 1990 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #66.--
+You have traveled 2461 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 401 pounds of food.
+You are 1910 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Tyler has fallen ill.
+
+
+--It is day #67.--
+You have traveled 2541 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 393 pounds of food.
+You are 1830 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 16 pounds of their food. You spend the day recovering.
+
+
+--It is day #69.--
+You have traveled 2621 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 401 pounds of food.
+You are 1750 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #70.--
+You have traveled 2621 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 393 pounds of food.
+You are 1750 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #71.--
+You have traveled 2621 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 385 pounds of food.
+You are 1750 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #72.--
+You have traveled 2621 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 377 pounds of food.
+You are 1750 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #73.--
+You have traveled 2701 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 369 pounds of food.
+You are 1670 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 42 pounds of food and you spend the day recovering.
+
+
+--It is day #75.--
+You have traveled 2781 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 319 pounds of food.
+You are 1590 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #76.--
+You have traveled 2861 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 311 pounds of food.
+You are 1510 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 32 pounds of their food. You spend the day recovering.
+
+
+--It is day #78.--
+You have traveled 2941 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 335 pounds of food.
+You are 1430 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #80.--
+You have traveled 3021 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 319 pounds of food.
+You are 1350 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #81.--
+You have traveled 3101 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 311 pounds of food.
+You are 1270 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #83.--
+You have traveled 3181 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 295 pounds of food.
+You are 1190 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 38 pounds of their food. You spend the day recovering.
+
+
+--It is day #85.--
+You have traveled 3261 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 325 pounds of food.
+You are 1110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #86.--
+You have traveled 3261 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 317 pounds of food.
+You are 1110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #87.--
+You have traveled 3261 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 309 pounds of food.
+You are 1110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #88.--
+You have traveled 3341 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 301 pounds of food.
+You are 1030 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #90.--
+You have traveled 3421 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 285 pounds of food.
+You are 950 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #91.--
+You have traveled 3501 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 277 pounds of food.
+You are 870 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #94.--
+You have traveled 3581 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 253 pounds of food.
+You are 790 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 2 extra ship parts. You spend the day recovering.
+
+
+--It is day #96.--
+You have traveled 3661 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 245 pounds of food.
+You are 710 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 4 extra ship parts. You spend the day recovering.
+
+
+--It is day #98.--
+You have traveled 3741 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 237 pounds of food.
+You are 630 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #99.--
+You have traveled 3741 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 229 pounds of food.
+You are 630 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+1
+Your crew lowers the nets and pulls up 100 pounds of fish.
+
+
+--It is day #100.--
+You have traveled 3741 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 329 pounds of food.
+You are 630 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Sarah has fallen ill.
+
+
+--It is day #101.--
+You have traveled 3821 miles.
+Sarah: Ill
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 321 pounds of food.
+You are 550 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #102.--
+You have traveled 3821 miles.
+Sarah: Ill
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 313 pounds of food.
+You are 550 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320Sarah has recovered.
+
+
+--It is day #103.--
+You have traveled 3821 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 305 pounds of food.
+You are 550 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #104.--
+You have traveled 3901 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 297 pounds of food.
+You are 470 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #106.--
+You have traveled 3981 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 281 pounds of food.
+You are 390 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320Tyler has recovered.
+
+
+--It is day #107.--
+You have traveled 3981 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 273 pounds of food.
+You are 390 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #109.--
+You have traveled 4061 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 257 pounds of food.
+You are 310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #111.--
+You have traveled 4141 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 241 pounds of food.
+You are 230 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #114.--
+You have traveled 4221 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 217 pounds of food.
+You are 150 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #115.--
+You have traveled 4301 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 20 gold pieces.
+You have 209 pounds of food.
+You are 70 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #116.--
+You have arrived at Grenada, at the edge of the Carribbean Sea.
+Would you like to make port? (Y/N)
+Y
+
+You have 20 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+3
+How many extra ship parts do you want to buy?
+1
+
+You have 0 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+3
+How many extra ship parts do you want to buy?
+1
+Sorry, you cannot afford that many ship parts.
+
+You have 0 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+1
+How many pounds of food do you want to buy?
+1
+Sorry, you cannot afford that much food.
+
+You have 0 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+5
+
+
+--It is day #117.--
+You have traveled 4451 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 201 pounds of food.
+You are 420 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #120.--
+You have traveled 4531 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 177 pounds of food.
+You are 340 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 4 extra ship parts. You spend the day recovering.
+
+
+--It is day #122.--
+You have traveled 4611 miles.
+Sarah: Healthy
+Tyler: Healthy
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 169 pounds of food.
+You are 260 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Tyler has fallen ill.
+
+
+--It is day #123.--
+You have traveled 4691 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 161 pounds of food.
+You are 180 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+2
+How many days would you like to rest for?
+2686320
+
+--It is day #124.--
+You have traveled 4691 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 153 pounds of food.
+You are 180 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 51 pounds of their food. You spend the day recovering.
+
+
+--It is day #126.--
+You have traveled 4771 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 196 pounds of food.
+You are 100 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #127.--
+You have traveled 4851 miles.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+
+You have 0 gold pieces.
+You have 188 pounds of food.
+You are 20 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+Your crew has made it safely to the island.
+Sarah: Healthy
+Tyler: Ill
+Patrick: Healthy
+Mesut: Deceased
+Zack: Healthy
+You have enough shovels to dig up the treasure!

@@ -1,0 +1,1115 @@
+You may now take your ship and crew from Port Marin, Spain to the hidden island in the Caribbean on the old pirate's map.
+
+How will you travel?
+1 - As a merchant
+2 - As a privateer
+3 - As a pirate
+3
+As a pirate, you begin your trip with 800 gold pieces.
+You will be sailing your Clipper, with an average speed of 100 miles per day.
+
+What is your name, Captain?
+Kidd
+Who are the other members of your crew?
+1:Blackbeard
+2:Barbarossa
+3:Cheng
+4:CalicoJack
+
+Before leaving Port Marin, you should purchase some supplies.
+
+You have 800 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+4
+How many shovels do you want to buy?
+5
+
+You have 750 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+3
+How many extra ship parts do you want to buy?
+6
+
+You have 630 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+1
+How many pounds of food do you want to buy?
+200
+
+You have 430 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+5
+
+
+--It is day #1.--
+You have traveled 0 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 200 pounds of food.
+You are 1261 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #4.--
+You have traveled 100 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 170 pounds of food.
+You are 1161 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 15 pounds of their food. You spend the day recovering.
+
+
+--It is day #6.--
+You have traveled 200 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 175 pounds of food.
+You are 1061 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #8.--
+You have traveled 300 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 155 pounds of food.
+You are 961 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #9.--
+You have traveled 400 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 145 pounds of food.
+You are 861 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #10.--
+You have traveled 500 miles.
+Kidd: Healthy
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 135 pounds of food.
+You are 761 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Kidd has fallen ill.
+
+
+--It is day #11.--
+You have traveled 600 miles.
+Kidd: Ill
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Healthy
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 125 pounds of food.
+You are 661 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Cheng has fallen ill.
+
+
+--It is day #12.--
+You have traveled 700 miles.
+Kidd: Ill
+Blackbeard: Healthy
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 115 pounds of food.
+You are 561 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Blackbeard has fallen ill.
+
+
+--It is day #13.--
+You have traveled 800 miles.
+Kidd: Ill
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 105 pounds of food.
+You are 461 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 7 pounds of food and you spend the day recovering.
+
+
+--It is day #15.--
+You have traveled 900 miles.
+Kidd: Ill
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 88 pounds of food.
+You are 361 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Kidd has died.
+
+
+--It is day #16.--
+You have traveled 1000 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 78 pounds of food.
+You are 261 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 51 pounds of their food. You spend the day recovering.
+
+
+--It is day #18.--
+You have traveled 1100 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 121 pounds of food.
+You are 161 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #19.--
+You have traveled 1200 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 430 gold pieces.
+You have 113 pounds of food.
+You are 61 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 37 pounds of food and you spend the day recovering.
+
+
+--It is day #21.--
+You have arrived at the Canary Islands.
+Would you like to make port? (Y/N)
+Y
+
+You have 430 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+1
+How many pounds of food do you want to buy?
+200
+
+You have 230 gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+5
+
+
+--It is day #22.--
+You have traveled 1361 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Healthy
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 268 pounds of food.
+You are 3010 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Barbarossa has fallen ill.
+
+
+--It is day #23.--
+You have traveled 1461 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Ill
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 260 pounds of food.
+You are 2910 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Barbarossa has died.
+
+
+--It is day #24.--
+You have traveled 1561 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 252 pounds of food.
+You are 2810 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #26.--
+You have traveled 1661 miles.
+Kidd: Deceased
+Blackbeard: Ill
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 240 pounds of food.
+You are 2710 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Blackbeard has died.
+
+
+--It is day #27.--
+You have traveled 1761 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 234 pounds of food.
+You are 2610 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #29.--
+You have traveled 1861 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 226 pounds of food.
+You are 2510 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #32.--
+You have traveled 1961 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 214 pounds of food.
+You are 2410 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #34.--
+You have traveled 2061 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 206 pounds of food.
+You are 2310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #35.--
+You have traveled 2161 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 202 pounds of food.
+You are 2210 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #36.--
+You have traveled 2261 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 198 pounds of food.
+You are 2110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #37.--
+You have traveled 2361 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 194 pounds of food.
+You are 2010 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 27 pounds of their food. You spend the day recovering.
+
+
+--It is day #39.--
+You have traveled 2461 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 217 pounds of food.
+You are 1910 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #40.--
+You have traveled 2561 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 213 pounds of food.
+You are 1810 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #41.--
+You have traveled 2661 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 209 pounds of food.
+You are 1710 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #42.--
+You have traveled 2761 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 205 pounds of food.
+You are 1610 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #43.--
+You have traveled 2861 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 201 pounds of food.
+You are 1510 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #45.--
+You have traveled 2961 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 193 pounds of food.
+You are 1410 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #48.--
+You have traveled 3061 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 181 pounds of food.
+You are 1310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #50.--
+You have traveled 3161 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 173 pounds of food.
+You are 1210 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 20 pounds of food and you spend the day recovering.
+
+
+--It is day #52.--
+You have traveled 3261 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 149 pounds of food.
+You are 1110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #55.--
+You have traveled 3361 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Ill
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 137 pounds of food.
+You are 1010 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Cheng has died.
+
+
+--It is day #56.--
+You have traveled 3461 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 133 pounds of food.
+You are 910 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #58.--
+You have traveled 3561 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 129 pounds of food.
+You are 810 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 27 pounds of their food. You spend the day recovering.
+
+
+--It is day #60.--
+You have traveled 3661 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 154 pounds of food.
+You are 710 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 54 pounds of food and you spend the day recovering.
+
+
+--It is day #62.--
+You have traveled 3761 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 98 pounds of food.
+You are 610 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+They took 26 pounds of food and you spend the day recovering.
+
+
+--It is day #64.--
+You have traveled 3861 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 70 pounds of food.
+You are 510 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #65.--
+You have traveled 3961 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 68 pounds of food.
+You are 410 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You have no replacement parts.  It takes three days to repair.
+
+
+--It is day #69.--
+You have traveled 4061 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 60 pounds of food.
+You are 310 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Fog surrounds your ship.  Drop anchor for one day.
+
+
+--It is day #71.--
+You have traveled 4161 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 56 pounds of food.
+You are 210 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #72.--
+You have traveled 4261 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 54 pounds of food.
+You are 110 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+Another pirate ship pulls alongside and attacks!
+You fend them off and take 2 extra ship parts. You spend the day recovering.
+
+
+--It is day #74.--
+You have traveled 4361 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 52 pounds of food.
+You are 10 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+An ocean storm batters your ship.  Drop anchor for two days.
+
+
+--It is day #77.--
+You have arrived at Grenada, at the edge of the Carribbean Sea.
+Would you like to make port? (Y/N)
+N
+
+
+--It is day #78.--
+You have traveled 4471 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 46 pounds of food.
+You are 400 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #80.--
+You have traveled 4571 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 42 pounds of food.
+You are 300 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+--It is day #81.--
+You have traveled 4671 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 40 pounds of food.
+You are 200 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+
+--It is day #83.--
+You have traveled 4771 miles.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+
+You have 230 gold pieces.
+You have 36 pounds of food.
+You are 100 miles from your next destination.
+
+
+What would you like to do?
+1 - Fish
+2 - Rest
+3 - Continue
+3
+
+
+Your crew has made it safely to the island.
+Kidd: Deceased
+Blackbeard: Deceased
+Barbarossa: Deceased
+Cheng: Deceased
+CalicoJack: Healthy
+You have enough shovels to dig up the treasure!

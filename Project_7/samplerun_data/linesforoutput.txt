@@ -1,0 +1,104 @@
+Opening Text:
+You may now take your ship and crew from Port Marin, Spain to the hidden island in the Caribbean on the old pirate's map.
+
+How will you travel?
+1 - As a merchant
+2 - As a privateer
+3 - As a pirate
+
+Captain Choices:
+As a merchant, you begin your trip with 1000 gold pieces.
+You will be sailing your Carrack, with an average speed of 80 miles per day.
+
+As a privateer, you begin your trip with 900 gold pieces.
+You will be sailing your Galleon, with an average speed of 90 miles per day.
+
+As a pirate, you begin your trip with 800 gold pieces.
+You will be sailing your Clipper, with an average speed of 100 miles per day.
+
+Crew Names:
+What is your name, Captain?
+Who are the other members of your crew?
+
+Crew Status:
+<name1>: <status1>
+<name2>: <status2>
+<name3>: <status3>
+<name4>: <status4>
+<name5>: <status5>
+
+Buying Supplies:
+You have X gold pieces.
+Available Supples:
+1. Food - 1 gold pieces
+2. Clothes - 2 gold pieces
+3. Ship Parts - 20 gold pieces
+4. Shovels - 10 gold pieces
+5. Leave Store
+
+Food
+How many pounds of food do you want to buy?
+Sorry, you cannot afford that much food.
+
+Clothes
+How many sets of clothes do you want to buy?
+Sorry, you cannot afford that many sets of clothes.
+
+Ship Parts
+How many extra ship parts do you want to buy?
+Sorry, you cannot afford that many ship parts.
+
+Shovels
+How many shovels do you want to buy?
+Sorry, you cannot afford that many shovels.
+
+Daily Report
+You have traveled W miles.
+Crew Status
+You have X gold pieces.
+You have Y pounds of food.
+You are Z miles from your next destination.
+
+Resting:
+How many days would you like to rest for?
+<name> has recovered.
+
+Fishing:
+Your crew lowers the nets and pulls up X pounds of fish.
+
+Event (no food):
+You have no food.
+
+Event (3):
+Another pirate ship pulls alongside and attacks!
+You fend them off and take X extra ship parts. 
+You spend the day recovering.
+
+Event (4):
+Another pirate ship pulls alongside and attacks!
+You fend them off and take X pounds of their food. 
+You spend the day recovering.
+
+Event (5):
+Another pirate ship pulls alongside and attacks!
+They took X pounds of food and you spend the day recovering.
+
+Event (6):
+Fog surrounds your ship.  Drop anchor for one day.
+
+Event (7):
+An ocean storm batters your ship.  Drop anchor for two days.
+
+Event (8, parts available):
+A part of your ship has broken!
+You replace the broken part. It takes one day.
+
+Event (8, no parts):
+A part of your ship has broken!
+You have no replacement parts.  It takes three days to repair.
+
+Event (9, getting ill):
+<name> has fallen ill.
+
+Event (9, dying):
+<name> has died.
