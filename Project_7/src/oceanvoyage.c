@@ -232,7 +232,76 @@ void printstatus(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW]) {
 //  Verify that the user has enough gold for their purchase and update the correct index of supplies.
 //  Deduct the corresponding amount from the user's funds.
 void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPLIES], int *funds) {
+  int selection = 0;
+  while(selection != 5){
+    printf("Buying Supplies:\nYou have %d gold pieces.\nAvailable Supples:", *funds);
+    printf("\n1. Food - 1 gold pieces\n2. Clothes - 2 gold pieces\n3. Ship Parts - 20 gold pieces\n4. Shovels - 10 gold pieces\n5. Leave Store");
+    scanf("\n %d", &selection);
 
+    switch(selection){
+      case 1: {
+        int amount = 0;
+        printf("Food\nHow many pounds of food do you want to buy?\n");
+        scanf("\n %d", &amount);
+
+        if(amount < *funds) {
+          funds -= amount;
+          supplies[0] += amount;
+        } else {
+          printf("Sorry, you cannot afford that much food.\n");
+        }
+        break;
+      }
+
+      case 2: {
+        int amount = 0;
+        printf("Clothes\nHow many sets of clothes do you want to buy?\n");
+        scanf("\n %d", &amount);
+
+        amount *= 2; // 2gp per set of clothes
+
+        if(amount < *funds) {
+          funds -= amount;
+          supplies[1] += amount;
+        } else {
+          printf("Sorry, you cannot afford that many sets of clothes.\n");
+        }
+        break;
+      }
+
+      case 3: {
+        int amount = 0;
+        printf("Ship Parts\nHow many extra ship parts do you want to buy?\n");
+        scanf("\n %d", &amount);
+
+        amount *= 20; // 20gp per set of parts
+
+        if(amount < *funds) {
+          funds -= amount;
+          supplies[2] += amount;
+        } else {
+          printf("Sorry, you cannot afford that many ship parts.\n");
+        }
+        break;
+      }
+
+      case 4: {
+        int amount = 0;
+        printf("Shovels\nHow many shovels do you want to buy?\n");
+        scanf("\n %d", &amount);
+
+        amount *= 10; // 10gp per shovel
+
+        if(amount < *funds) {
+          funds -= amount;
+          supplies[3] += amount;
+        } else {
+          printf("Sorry, you cannot afford that many shovels.\n");
+        }
+        break;
+      }
+    }
+  }
 }
 
 //Pre-conditions:  crew names is an array of strings for the crew members
@@ -250,7 +319,8 @@ void dailyreport(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], in
   printf("You have traveled %d miles.", traveled);
   printstatus(crewnames, crewstatus);
   printf("\nYou have %d gold pieces.", funds);
-
+  printf("\nYou have %d pounds of food.", supplies[0]);
+  printf("You are %d miles from your destination", (CANARY+GRENADA+FINAL+DISTANCE) - traveled);
 
 }
 
@@ -436,12 +506,5 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
 
 // Helper function which calculates the total amount of food consumed by all living members of the crew.
 int feed_crew(int num_days, int food_per_member, int* crewstatus){
-  int total_food_consumed = 0;
-
-  for(int i = 0; i < NUMCREW; i++){
-    if(crewstatus[i] != 0)
-      total_food_consumed += food_per_member * num_days;
-  }
-
-  return total_food_consumed;
+  return countcrew(crewstatus) * food_per_member * num_days;
 }
