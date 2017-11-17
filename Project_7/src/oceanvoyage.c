@@ -34,7 +34,7 @@ int max(int a, int b);
 int min(int a, int b);
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]);
 
-// Below are prototypes for helper functions that I have written
+// Below are prototypes for helper functions that I (charlton) have written
 int feed_crew();
 
 //Main function - This is the final version of main.  Any changes you make while
@@ -158,9 +158,12 @@ void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supp
 
   printf("You may now take your ship and crew from Port Marin, Spain to the hidden island in the Caribbean on the old pirate's map.\n");
 
+  // Prompt the user for the captain type
   printf("How will you travel?\n1 - As a merchant\n2 - As a privateer\n3 - As a pirate\n");
   scanf("\n %d", captaintype);
 
+  // Act upon the user's selection, setting funds and distance per day accordingly for each captain type
+  // This will also notify the user of those attributes
   switch(*captaintype){
     case 1:
       printf("As a merchant, you begin your trip with 1000 gold pieces.\nYou will be sailing your Carrack, with an average speed of 80 miles per day.\n");
@@ -181,18 +184,22 @@ void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supp
       break;
   }
 
+  // Retrieve the player's name from the user
   printf("\nWhat is your name, Captain?\n");
   scanf("\n %s", crewnames[0]);
 
+  // Loop over each member of the crew, so the user can assign names for them
   printf("\nWho are the other members of your crew?\n");
   for(int i = 1; i < NUMCREW; i++){
     printf("%d:", i);
     scanf("%s", crewnames[i]);
   }
 
+  // Initialize crew member statuses, giving them all the gift of health (at least initially)
   for(int i = 0; i < NUMCREW; i++)
     crewstatus[i] = 2;
 
+  // Initialize the values of all supplies to 0.
   for(int i = 0; i < NUMSUPPLIES; i++)
     supplies[i] = 0;
 }
@@ -204,9 +211,10 @@ void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supp
 //What to do in this function: Traverse the crew status array and count how many crew members
 //  have a status that is not 0.  Return this count.
 int countcrew(int crewstatus[NUMCREW]) {
+  // alive will maintain a tally of all currently living crew members
   int alive = 0;
   for(int i = 0; i < NUMCREW; i++)
-    if(crewstatus[i] > 0)
+    if(crewstatus[i] > 0) // For each living member of the crew, increment alive by 1
       alive++;
 
   return alive;
@@ -220,9 +228,11 @@ int countcrew(int crewstatus[NUMCREW]) {
 //What to do in this function: print each crew members name and their status.
 //  You may use a status array to shorten this process: char status[3][STRLENGTH] = {"Deceased", "Ill", "Healthy"};
 void printstatus(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW]) {
+  // e-z lookup table (as suggested in the comments)
   char statuses[3][STRLENGTH] = {"Deceased", "Ill", "Healthy"};
   for(int i = 0; i < NUMCREW; i++){
-    int member_status = crewstatus[i];
+    int member_status = crewstatus[i]; // Temp int to hold the current member's status (for readability)
+    // For each crew member, print the name and current status (healthy/ill/deceased)
     printf("%s: %s\n", crewnames[i], statuses[member_status]);
   }
 
@@ -241,37 +251,51 @@ void printstatus(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW]) {
 //  Verify that the user has enough gold for their purchase and update the correct index of supplies.
 //  Deduct the corresponding amount from the user's funds.
 void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPLIES], int *funds) {
+  // Temp. variable to hold the user's current menu selection
   int selection = 0;
+
+  // So long as the selection isn't 5 (exit), keep looping
   while(selection != 5){
     printf("\nBuying Supplies:\nYou have %d gold pieces.\nAvailable Supples:", *funds);
     printf("\n1. Food - 1 gold pieces\n2. Clothes - 2 gold pieces\n3. Ship Parts - 20 gold pieces\n4. Shovels - 10 gold pieces\n5. Leave Store\n");
+    // Depending on whether or not you put in unexpected characters, scanf will fail and this'll just enter an infinite loop
+    // a call to fflush usually makes this a bit more stable, but since this call is technically undefined behavior I'm leaving it out
+    // and just assuming the user won't mess up the stdin buffer
     // fflush(stdin);
     scanf("\n %d", &selection);
 
+    // After gathering user input, we must act on it
+    // Let's get out our handy dandy switch statement for that
     switch(selection){
-      case 1: {
+      case 1: { // If the user wants to buy food
+        // All of these cases are effectively the same, so I'll comment them here.
+        // In all of these cases, amount is the amount of supplies the user wants to buy
+        // This is later multiplied by the price per unit to determine the cost to the user.
         int amount = 0;
         printf("Food\nHow many pounds of food do you want to buy?\n");
         scanf("\n %d", &amount);
 
+        // The user needs to have enough funds to purchase the items (less than or equal to their current balance)
         if(amount <= *funds) {
-          *funds -= amount;
+          // Subtract supply cost from funds
+          *funds -= amount; // Subtract the cost of supplies from the user's funds. 1 unit of food = 1 gold
+          // Add the purchased supplies to the users inventory, at the appropriate index
           supplies[0] += amount;
         } else {
+          // If the user doesn't have enough funds to purchase supplies,
+          // let them know that they're poor
           printf("Sorry, you cannot afford that much food.\n");
         }
         break;
       }
 
-      case 2: {
+      case 2: { // User is buying clothes
         int amount = 0;
         printf("Clothes\nHow many sets of clothes do you want to buy?\n");
         scanf("\n %d", &amount);
 
-        amount *= 2; // 2gp per set of clothes
-
         if(amount <= *funds) {
-          *funds -= amount;
+          *funds -= amount*2; // 2 gold per set of clothes
           supplies[1] += amount;
         } else {
           printf("Sorry, you cannot afford that many sets of clothes.\n");
@@ -279,15 +303,13 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
         break;
       }
 
-      case 3: {
+      case 3: { // User is buying ship parts
         int amount = 0;
         printf("Ship Parts\nHow many extra ship parts do you want to buy?\n");
         scanf("\n %d", &amount);
 
-        amount *= 20; // 20gp per set of parts
-
         if(amount <= *funds) {
-          *funds -= amount;
+          *funds -= amount*20;  // 20 gold per set of parts
           supplies[2] += amount;
         } else {
           printf("Sorry, you cannot afford that many ship parts.\n");
@@ -295,15 +317,13 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
         break;
       }
 
-      case 4: {
+      case 4: { // User is buying shovels
         int amount = 0;
         printf("Shovels\nHow many shovels do you want to buy?\n");
         scanf("\n %d", &amount);
 
-        amount *= 10; // 10gp per shovel
-
         if(amount <= *funds) {
-          *funds -= amount;
+          *funds -= amount*10; // 10 gold per shovel
           supplies[3] += amount;
         } else {
           printf("Sorry, you cannot afford that many shovels.\n");
