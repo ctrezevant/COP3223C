@@ -156,30 +156,37 @@ int main(void) {
 //  Set the initial amount of supplies to be 0 for each supply
 void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int *captaintype, int *funds, int *distanceperday) {
 
-  printf("How will you travel?\n1 - As a merchant\n2 - As a privateer\n3 - As a pirate");
+  printf("How will you travel?\n1 - As a merchant\n2 - As a privateer\n3 - As a pirate\n");
   scanf("\n %d", captaintype);
 
   switch(*captaintype){
     case 1:
+      printf("As a merchant, you begin your trip with 1000 gold pieces.\nYou will be sailing your Carrack, with an average speed of 80 miles per day.");
       *funds = 1000;
       *distanceperday = 80;
       break;
 
     case 2:
+      printf("As a privateer, you begin your trip with 900 gold pieces.\nYou will be sailing your Galleon, with an average speed of 90 miles per day.");
       *funds = 900;
       *distanceperday = 90;
       break;
 
-    case 3 :
+    case 3:
+      printf("As a pirate, you begin your trip with 800 gold pieces.\nYou will be sailing your Clipper, with an average speed of 100 miles per day.");
       *funds = 800;
       *distanceperday = 100;
       break;
   }
 
-  scanf("\nWhat is your name, Captain? \n%s", &crewnames[0]);
+  printf("\nWhat is your name, Captain?");
+  scanf("\n %s", crewnames[0]);
 
-  for(int i = 1; i < NUMCREW; i++)
-    scanf("%d:%s\n", &i, &crewnames[i]);
+  printf("\nWho are the other members of your crew?\n");
+  for(int i = 1; i < NUMCREW; i++){
+    printf("%d:", i);
+    scanf("%s", crewnames[i]);
+  }
 
   for(int i = 0; i < NUMCREW; i++)
     crewstatus[i] = 2;
@@ -214,7 +221,7 @@ void printstatus(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW]) {
   char statuses[3][STRLENGTH] = {"Deceased", "Ill", "Healthy"};
   for(int i = 0; i < NUMCREW; i++){
     int member_status = crewstatus[i];
-    printf("%s: %s", crewnames[i], statuses[member_status]);
+    printf("%s: %s\n", crewnames[i], statuses[member_status]);
   }
 
 }
@@ -234,8 +241,9 @@ void printstatus(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW]) {
 void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPLIES], int *funds) {
   int selection = 0;
   while(selection != 5){
-    printf("Buying Supplies:\nYou have %d gold pieces.\nAvailable Supples:", *funds);
-    printf("\n1. Food - 1 gold pieces\n2. Clothes - 2 gold pieces\n3. Ship Parts - 20 gold pieces\n4. Shovels - 10 gold pieces\n5. Leave Store");
+    printf("\nBuying Supplies:\nYou have %d gold pieces.\nAvailable Supples:", *funds);
+    printf("\n1. Food - 1 gold pieces\n2. Clothes - 2 gold pieces\n3. Ship Parts - 20 gold pieces\n4. Shovels - 10 gold pieces\n5. Leave Store\n");
+    fflush(stdin);
     scanf("\n %d", &selection);
 
     switch(selection){
@@ -244,8 +252,8 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
         printf("Food\nHow many pounds of food do you want to buy?\n");
         scanf("\n %d", &amount);
 
-        if(amount < *funds) {
-          funds -= amount;
+        if(amount <= *funds) {
+          *funds -= amount;
           supplies[0] += amount;
         } else {
           printf("Sorry, you cannot afford that much food.\n");
@@ -260,8 +268,8 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 
         amount *= 2; // 2gp per set of clothes
 
-        if(amount < *funds) {
-          funds -= amount;
+        if(amount <= *funds) {
+          *funds -= amount;
           supplies[1] += amount;
         } else {
           printf("Sorry, you cannot afford that many sets of clothes.\n");
@@ -276,8 +284,8 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 
         amount *= 20; // 20gp per set of parts
 
-        if(amount < *funds) {
-          funds -= amount;
+        if(amount <= *funds) {
+          *funds -= amount;
           supplies[2] += amount;
         } else {
           printf("Sorry, you cannot afford that many ship parts.\n");
@@ -292,8 +300,8 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 
         amount *= 10; // 10gp per shovel
 
-        if(amount < *funds) {
-          funds -= amount;
+        if(amount <= *funds) {
+          *funds -= amount;
           supplies[3] += amount;
         } else {
           printf("Sorry, you cannot afford that many shovels.\n");
@@ -316,10 +324,10 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 //  traveled.  Then, print the status of the crew by calling printstatus.  Print the funds and amount
 //  of food that the ship has.  Then, let the user know how far they are from their next destination.
 void dailyreport(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int funds, int traveled) {
-  printf("You have traveled %d miles.", traveled);
+  printf("You have traveled %d miles.\n", traveled);
   printstatus(crewnames, crewstatus);
-  printf("\nYou have %d gold pieces.", funds);
-  printf("\nYou have %d pounds of food.", supplies[0]);
+  printf("\nYou have %d gold pieces.\n", funds);
+  printf("You have %d pounds of food.\n", supplies[0]);
   printf("You are %d miles from your destination", (CANARY+GRENADA+FINAL+DISTANCE) - traveled);
 
 }
@@ -420,7 +428,7 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
   int days_spent = 0;
 
   if(supplies[0] < 1){
-    printf("You have no food.");
+    printf("You have no food.\n");
     if(event + 2 < 9)
       event += 2;
   }
@@ -428,7 +436,7 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
   switch(event){
     case 3: { // Gain parts
       int gained_parts = (rand() % 4);
-      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d extra ship parts. You spend the day recovering.", gained_parts);
+      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d extra ship parts. You spend the day recovering.\n", gained_parts);
       supplies[2] += gained_parts;
       days_spent++;
       break;
@@ -436,7 +444,7 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
 
     case 4: { // Gain food
       int food_gained = (rand() % 6) * 10;
-      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d pounds of their food. You spend the day recovering.", food_gained);
+      printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d pounds of their food. You spend the day recovering.\n", food_gained);
       supplies[0] += food_gained;
       days_spent++;
       break;
@@ -444,32 +452,32 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
 
     case 5: { // Lose food
       int food_lost = ((rand() % 5) * 10) + 5;
-      printf("Another pirate ship pulls alongside and attacks!\nThey took %d pounds of food and you spend the day recovering.", food_lost);
+      printf("Another pirate ship pulls alongside and attacks!\nThey took %d pounds of food and you spend the day recovering.\n", food_lost);
       supplies[0] -= food_lost;
       days_spent++;
       break;
     }
 
     case 6: { // Ship stuck in fog
-      printf("Fog surrounds your ship.  Drop anchor for one day.");
+      printf("Fog surrounds your ship.  Drop anchor for one day.\n");
       days_spent += 2;
       break;
     }
 
     case 7: { // Ship stuck in fog
-      printf("An ocean storm batters your ship.  Drop anchor for two days.");
+      printf("An ocean storm batters your ship.  Drop anchor for two days.\n");
       days_spent++;
       break;
     }
 
     case 8: { // Broken parts
-      printf("A part of your ship has broken!");
+      printf("A part of your ship has broken!\n");
 
       if(supplies[2] > 0) {
-        printf("You replace the broken part. It takes one day.");
+        printf("You replace the broken part. It takes one day.\n");
         days_spent++;
       } else {
-        printf("You have no replacement parts.  It takes three days to repair.");
+        printf("You have no replacement parts.  It takes three days to repair.\n");
         days_spent += 3;
       }
 
@@ -487,9 +495,9 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
       }
 
       if(*unlucky_person == 0){
-        printf("%s has died.", crewnames[unlucky_index]);
+        printf("%s has died.\n", crewnames[unlucky_index]);
       } else {
-        printf("%s has fallen ill.", crewnames[unlucky_index]);
+        printf("%s has fallen ill.\n", crewnames[unlucky_index]);
       }
 
       break;
