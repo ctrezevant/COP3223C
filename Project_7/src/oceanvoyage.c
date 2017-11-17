@@ -156,30 +156,32 @@ int main(void) {
 //  Set the initial amount of supplies to be 0 for each supply
 void setup(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int *captaintype, int *funds, int *distanceperday) {
 
+  printf("You may now take your ship and crew from Port Marin, Spain to the hidden island in the Caribbean on the old pirate's map.\n");
+
   printf("How will you travel?\n1 - As a merchant\n2 - As a privateer\n3 - As a pirate\n");
   scanf("\n %d", captaintype);
 
   switch(*captaintype){
     case 1:
-      printf("As a merchant, you begin your trip with 1000 gold pieces.\nYou will be sailing your Carrack, with an average speed of 80 miles per day.");
+      printf("As a merchant, you begin your trip with 1000 gold pieces.\nYou will be sailing your Carrack, with an average speed of 80 miles per day.\n");
       *funds = 1000;
       *distanceperday = 80;
       break;
 
     case 2:
-      printf("As a privateer, you begin your trip with 900 gold pieces.\nYou will be sailing your Galleon, with an average speed of 90 miles per day.");
+      printf("As a privateer, you begin your trip with 900 gold pieces.\nYou will be sailing your Galleon, with an average speed of 90 miles per day.\n");
       *funds = 900;
       *distanceperday = 90;
       break;
 
     case 3:
-      printf("As a pirate, you begin your trip with 800 gold pieces.\nYou will be sailing your Clipper, with an average speed of 100 miles per day.");
+      printf("As a pirate, you begin your trip with 800 gold pieces.\nYou will be sailing your Clipper, with an average speed of 100 miles per day.\n");
       *funds = 800;
       *distanceperday = 100;
       break;
   }
 
-  printf("\nWhat is your name, Captain?");
+  printf("\nWhat is your name, Captain?\n");
   scanf("\n %s", crewnames[0]);
 
   printf("\nWho are the other members of your crew?\n");
@@ -243,7 +245,7 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
   while(selection != 5){
     printf("\nBuying Supplies:\nYou have %d gold pieces.\nAvailable Supples:", *funds);
     printf("\n1. Food - 1 gold pieces\n2. Clothes - 2 gold pieces\n3. Ship Parts - 20 gold pieces\n4. Shovels - 10 gold pieces\n5. Leave Store\n");
-    fflush(stdin);
+    // fflush(stdin);
     scanf("\n %d", &selection);
 
     switch(selection){
@@ -327,7 +329,12 @@ void dailyreport(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], in
   printf("You have traveled %d miles.\n", traveled);
   printstatus(crewnames, crewstatus);
   printf("\nYou have %d gold pieces.\n", funds);
-  printf("You have %d pounds of food.\n", supplies[0]);
+
+  if(supplies[0] > 0)
+    printf("You have %d pounds of food.\n", supplies[0]);
+  else
+    printf("You have no food.");
+
   printf("You are %d miles from your destination", (CANARY+GRENADA+FINAL+DISTANCE) - traveled);
 
 }
@@ -363,7 +370,8 @@ int min(int a, int b) {
 //  nothing happens.
 void rest(int supplies[NUMSUPPLIES], char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days) {
   int num_resting_days;
-  scanf("How many days would you like to rest for? \n%d", &num_resting_days);
+  printf("How many days would you like to rest for? \n");
+  scanf("\n%d", &num_resting_days);
 
   *days += num_resting_days;
 
@@ -424,7 +432,7 @@ int fish() {
 
 //  For any days spent in this way, deduct 2 pounds of food per crew member per day.
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]) {
-  int event = rand() % 9;
+  int event = rand() % 10;
   int days_spent = 0;
 
   if(supplies[0] < 1){
@@ -485,16 +493,16 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
     }
 
     case 9: { // Illness
-      int unlucky_index = rand() % NUMCREW;
-      int* unlucky_person = &crewstatus[unlucky_index];
+      int unlucky_index = (rand() % NUMCREW);
+      int* unlucky_person_health = &crewstatus[unlucky_index];
 
-      if(*unlucky_person > 0) {
-        *unlucky_person = *unlucky_person - 1;
+      if(*unlucky_person_health > 0) {
+        *unlucky_person_health = *unlucky_person_health - 1;
       } else {
         break;
       }
 
-      if(*unlucky_person == 0){
+      if(*unlucky_person_health == 0){
         printf("%s has died.\n", crewnames[unlucky_index]);
       } else {
         printf("%s has fallen ill.\n", crewnames[unlucky_index]);
