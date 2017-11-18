@@ -346,10 +346,13 @@ void getsupplies(char supplytypes[NUMSUPPLIES][STRLENGTH], int supplies[NUMSUPPL
 //  traveled.  Then, print the status of the crew by calling printstatus.  Print the funds and amount
 //  of food that the ship has.  Then, let the user know how far they are from their next destination.
 void dailyreport(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int supplies[NUMSUPPLIES], int funds, int traveled) {
+  // Display the daily report
   printf("You have traveled %d miles.\n", traveled);
   printstatus(crewnames, crewstatus);
   printf("\nYou have %d gold pieces.\n", funds);
 
+  // In the daily report, we need to include the amount of food the user has
+  // Since it's impossible to have negative food, let the user know when they're out of food instead
   if(supplies[0] > 0)
     printf("You have %d pounds of food.\n", supplies[0]);
   else
@@ -389,17 +392,24 @@ int min(int a, int b) {
 //  If they are healthy or deceased, nothing happens.  If the first number is a 0,
 //  nothing happens.
 void rest(int supplies[NUMSUPPLIES], char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days) {
+  // Total tally of days spent resting
   int num_resting_days;
+  // Ask the user to provide the number of days to rest
   printf("How many days would you like to rest for? \n");
   scanf("\n%d", &num_resting_days);
 
+  // Add the number of days spent resting to the total number of days spent journeying
   *days += num_resting_days;
 
+  // Calculate the amount of food needed to feed the crew, decrease supplies accordingly
   supplies[0] -= feed_crew(num_resting_days, 2, &crewstatus);
 
+  // Generate a random number, check if the random number is 1
   if(rand() % 1 == 1){
+    // Randomly choose a crew member
     int candidate = rand() % NUMCREW;
 
+    // If the chosen crew member isn't dead, give them full health
     if(crewstatus[candidate] != 0)
       crewstatus[candidate] = 2;
   }
@@ -413,6 +423,7 @@ void rest(int supplies[NUMSUPPLIES], char crewnames[NUMCREW][STRLENGTH], int cre
 //  Multiply this number by 50 and tell the user how many fish were caught.  Return
 //  this value.
 int fish() {
+  // Randomly determine the amount of fish to catch, let the user know
   int fish_amount = (rand() % 3) * 50;
   printf("Your crew lowers the nets and pulls up %d pounds of fish.", fish_amount);
   return fish_amount;
@@ -452,43 +463,52 @@ int fish() {
 
 //  For any days spent in this way, deduct 2 pounds of food per crew member per day.
 void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *days, int supplies[NUMSUPPLIES]) {
+  // Randomly generate an "event code" between 0 and 9
   int event = rand() % 10;
+  // Total tally of the days spent. This will be updated according to the event
   int days_spent = 0;
 
+  // Let the user know whether they have food or not, for some reason
   if(supplies[0] < 1){
     printf("You have no food.\n");
+    // Increment event code by 2 as per the spec
     if(event + 2 < 9)
       event += 2;
   }
 
   switch(event){
     case 3: { // Gain parts
-      int gained_parts = (rand() % 4);
+      // Randomly determine the number of parts to bestow upon the player
+      int gained_parts = (rand() % 4) + 1;
       printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d extra ship parts. You spend the day recovering.\n", gained_parts);
+      // Add gained parts to total supply of parts in inventory
       supplies[2] += gained_parts;
+      // Increment days spent by one
       days_spent++;
       break;
     }
 
     case 4: { // Gain food
+      // Randomly determine amount of food to give
       int food_gained = (rand() % 6) * 10;
       printf("Another pirate ship pulls alongside and attacks!\nYou fend them off and take %d pounds of their food. You spend the day recovering.\n", food_gained);
-      supplies[0] += food_gained;
+      supplies[0] += food_gained; // Add food to inventory
       days_spent++;
       break;
     }
 
     case 5: { // Lose food
+      // Determine the amount of food to steal from the user
       int food_lost = ((rand() % 5) * 10) + 5;
       printf("Another pirate ship pulls alongside and attacks!\nThey took %d pounds of food and you spend the day recovering.\n", food_lost);
-      supplies[0] -= food_lost;
+      supplies[0] -= food_lost; // Remove food from inventory
       days_spent++;
       break;
     }
 
     case 6: { // Ship stuck in fog
       printf("Fog surrounds your ship.  Drop anchor for one day.\n");
-      days_spent += 2;
+      days_spent += 2; // Fog causes you to spend 2 days in limbo
       break;
     }
 
@@ -513,17 +533,22 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
     }
 
     case 9: { // Illness
+      // unlucky_index is the integer position of the unlucky crew member in the crew array
       int unlucky_index = (rand() % NUMCREW);
+      // Create a pointer to the value of the unlucy crew member's health
       int* unlucky_person_health = &crewstatus[unlucky_index];
 
+      // If the unlucky member isn't dead...
       if(*unlucky_person_health > 0) {
+        // Decrement their health by 1
         *unlucky_person_health = *unlucky_person_health - 1;
       } else {
         break;
       }
 
+      // Print the status of their health
       if(*unlucky_person_health == 0){
-        printf("%s has died.\n", crewnames[unlucky_index]);
+        printf("%s has died.\n", crewnames[unlucky_index]); // F
       } else {
         printf("%s has fallen ill.\n", crewnames[unlucky_index]);
       }
@@ -535,7 +560,10 @@ void event(char crewnames[NUMCREW][STRLENGTH], int crewstatus[NUMCREW], int *day
       break;
   }
 
+  // Determine the amount of food the crew will have consumed during the period the player spent
+  // dealing with events. Then decrease the amount of food in their inventory by this amount
   supplies[0] -= feed_crew(days_spent, 2, &crewstatus);
+  // Add the number of days spent dealing with events to the total number of days
   *days += days_spent;
 
 }
