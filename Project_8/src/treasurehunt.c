@@ -39,7 +39,7 @@ void print_board();
 void print_crew();
 void print_time();
 void prompt_moves();
-void dig(int row, int col);
+void dig(int row, int col, int crew_member);
 int check_ended();
 
 int main(){
@@ -151,19 +151,60 @@ void prompt_moves(){
     fgets(input, sizeof(input), stdin);
     sscanf(input, " %d %d", &destrow, &destcol);
 
-    dig(destrow, destcol);
+    dig(destrow, destcol, i);
   }
 }
 
-void dig(int row, int col){
+void dig(int row, int col, int crew_index){
 
+  map* current_square = &island[row][col];
+  pirate* crew_member = &pirates[crew_index];
+  int sand_already_cleared = 0, treasure_already_cleared = 0;
 
+  // If there is no sand to be cleared, note this so that we dont' attempt to
+  // clear any.
+  if((*current_square).sand == 0)
+    sand_already_cleared = 1;
 
-  /*You have removed some of the sand from this section.
-You have removed all the sand from this section!
-You take all of the treasure back to the ship!
-You take some of the treasure back to the ship.
-This section has already been cleared.*/
+  // If the chosen crew member has a dig statistic that is greater than or equal
+  // to the amount of sand to remove (and additionally if there is sand to remove)
+  if((*crew_member).dig <= (*current_square).sand && sand_already_cleared == 0){
+    // Remove an amount of sand from the current square equal to crew_member.dig
+    (*current_square).sand -= (*crew_member).dig;
+
+  // Otherwise, if the member has a dig value greater than the remaining clearable
+  // sand, we can simply set the current square's sand value to 0
+  } else if(sand_already_cleared == 0) {
+    // Crew member has dig value greater than amount of sand to clear
+    (*current_square).sand = 0;
+  }
+
+  if((*current_square).sand == 0 && sand_already_cleared == 0){
+    printf("You have removed all the sand from this section!");
+  } else {
+    printf("You have removed some of the sand from this section.");
+  }
+
+  // If there is no treasure to be cleared, note this so that we dont' attempt to
+  // clear any. This also serves for the "already cleared" message.
+  if((*current_square).treasure == 0){
+    treasure_already_cleared = 1;
+  }
+
+  if((*crew_member).carry <= (*current_square).treasure && treasure_already_cleared == 0){
+    total_treasure_collected += (*crew_member).carry;
+    (*current_square).treasure -= (*crew_member).carry;
+    printf("You take some of the treasure back to the ship.");
+
+  } else if(treasure_already_cleared == 0){
+    // Crew member has carry value greater than amount of treasure to clear
+    total_treasure_collected += (*current_square).treasure;
+    (*current_square).treasure = 0;
+    printf("You take all of the treasure back to the ship!");
+  }
+
+  if(treasure_already_cleared == 1)
+        printf("This section has already been cleared.");
 }
 
 void print_time(){
