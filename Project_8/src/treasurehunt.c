@@ -153,6 +153,8 @@ void prompt_moves(){
 
     dig(destrow, destcol, i);
   }
+
+  time_elapsed++;
 }
 
 void dig(int row, int col, int crew_index){
