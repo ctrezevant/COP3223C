@@ -44,7 +44,7 @@ int check_ended();
 
 int main(){
   if(time_elapsed < 0){
-    printf("You have arrived at Treasure Island!");
+    printf("You have arrived at Treasure Island!\n");
     read_parse_map();
     time_elapsed = 0;
   }
@@ -57,9 +57,9 @@ int main(){
   }
 
   if(total_treasure_collected == TOTAL_TREASURE_AVAILABLE){
-    printf("All of the pirate's treasure belongs to you now!");
+    printf("All of the pirate's treasure belongs to you now!\n");
   } else {
-    printf("You are forced to evacuate the island.  You have claimed %d pieces of the pirate's treasure!", total_treasure_collected);
+    printf("You are forced to evacuate the island.  You have claimed %d pieces of the pirate's treasure!\n", total_treasure_collected);
   }
 
   return 0;
@@ -182,9 +182,9 @@ void dig(int row, int col, int crew_index){
   }
 
   if((*current_square).sand == 0 && sand_already_cleared == 0){
-    printf("You have removed all the sand from this section!");
+    printf("You have removed all the sand from this section!\n");
   } else {
-    printf("You have removed some of the sand from this section.");
+    printf("You have removed some of the sand from this section.\n");
   }
 
   // If there is no treasure to be cleared, note this so that we dont' attempt to
@@ -196,17 +196,17 @@ void dig(int row, int col, int crew_index){
   if((*crew_member).carry <= (*current_square).treasure && treasure_already_cleared == 0){
     total_treasure_collected += (*crew_member).carry;
     (*current_square).treasure -= (*crew_member).carry;
-    printf("You take some of the treasure back to the ship.");
+    printf("You take some of the treasure back to the ship.\n");
 
   } else if(treasure_already_cleared == 0){
     // Crew member has carry value greater than amount of treasure to clear
     total_treasure_collected += (*current_square).treasure;
     (*current_square).treasure = 0;
-    printf("You take all of the treasure back to the ship!");
+    printf("You take all of the treasure back to the ship!\n");
   }
 
   if(treasure_already_cleared == 1)
-        printf("This section has already been cleared.");
+        printf("This section has already been cleared.\n");
 }
 
 void print_time(){
