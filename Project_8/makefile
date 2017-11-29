@@ -4,7 +4,7 @@ all:$(PROJNAME)
 
 $(PROJNAME):src/$(PROJNAME).c
 	mkdir -p ./bin/
-	gcc -std=c99 -lm -o ./bin/$(PROJNAME) ./src/$(PROJNAME).c
+	gcc -std=c99 -o ./bin/$(PROJNAME) ./src/$(PROJNAME).c -lm
 
 test:$(PROJNAME)
 	./bin/$(PROJNAME) < ./test_input.txt
