@@ -112,7 +112,7 @@ void read_parse_map(){
 
   // Since the island is a square x by x grid, we can get
   // the number of rows/columns by square rooting the board size
-  BOARD_SIZE = sqrt(MAP_NUMSQUARES);
+  BOARD_SIZE = (int)(sqrt(MAP_NUMSQUARES));
 
   char filename[30];
   FILE* mapfile;
