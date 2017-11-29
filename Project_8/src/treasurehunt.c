@@ -123,9 +123,9 @@ void read_parse_map(){
   mapfile = fopen(filename, "r");
 
   for(int i = 0; i < MAP_NUMSQUARES; i++){
-    fscanf(mapfile, "%d", &island[i].sand);
-    fscanf(mapfile, "%d", &island[i].treasure);
-    TOTAL_TREASURE_AVAILABLE += &island[i].treasure; // Computes total amount of treasure to clear
+    fscanf(mapfile, "%d", island[i].sand);
+    fscanf(mapfile, "%d", island[i].treasure);
+    TOTAL_TREASURE_AVAILABLE += island[i].treasure; // Computes total amount of treasure to clear
   }
 
   for(int i = 0; i < MAP_NUMPIRATES; i++){
