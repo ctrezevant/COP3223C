@@ -72,7 +72,6 @@ void print_board(){
 
   // For each row
   for(i = 0; i < BOARD_SIZE; i++){
-    printf("\t"); // Start off each row with an indentation
 
     // For each square in the current row
     for(j = 0; j < BOARD_SIZE; j++){
@@ -80,13 +79,13 @@ void print_board(){
       map* current_square = &island[i][j];
       // If there's sand covering the square currently
       if((*current_square).sand > 0){
-        printf("	%ds", (*current_square).sand);
+        printf(" %ds", (*current_square).sand);
       // If there's no sand covering the current square, and the square contains treasure
       } else if((*current_square).sand <= 0 &&  (*current_square).treasure > 0){
-        printf("	%dT", (*current_square).treasure);
+        printf(" %dT", (*current_square).treasure);
       // Otherwise, if there's no sand *and* no treasure
       } else {
-        printf("	- ");
+        printf(" - ");
       }
     }
 
@@ -103,7 +102,7 @@ void print_crew(){
     // Pointer to entry for current crew member in the pirates array
     pirate* current_member = &pirates[i];
     // Print statistics for the current crew member
-    printf("%d  %d  %d", i+1, (*current_member).dig, (*current_member).carry);
+    printf("%d     %d    %d", i+1, (*current_member).dig, (*current_member).carry);
     printf("\n"); // end each row with a newline
   }
 }
@@ -149,9 +148,7 @@ void prompt_moves(){
     printf("\nWhere would you like to send crew member %d? \n", i+1);
     print_board();
 
-    char input[3];
-    fgets(input, sizeof(input), stdin);
-    sscanf(input, " %d %d", &destrow, &destcol);
+    scanf(" %d %d", &destrow, &destcol);
 
     dig(destrow, destcol, i);
   }
@@ -160,6 +157,10 @@ void prompt_moves(){
 }
 
 void dig(int row, int col, int crew_index){
+
+  // Convert the values of row and col in terms of index=0
+  row--;
+  col--;
 
   map* current_square = &island[row][col];
   pirate* crew_member = &pirates[crew_index];
