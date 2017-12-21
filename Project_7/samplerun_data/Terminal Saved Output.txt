@@ -1,0 +1,1048 @@
+Last login: Sun Dec  3 18:38:27 on ttys000
+Charltons-MacBook-Pro:~ charlton$ cd Documents/
+Charltons-MacBook-Pro:Documents charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Documents charlton$ ls
+Arduino   Git		      TravisCI_example	game.html
+COP3223C  Renoise	      Vivox		mydata-1506478350654.zip
+GFS_Bot   ToCorgiOrToCrouton  edsby
+Charltons-MacBook-Pro:Documents charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Documents charlton$ cd TravisCI_example/
+Charltons-MacBook-Pro:TravisCI_example charlton$ ls
+README.md  Template  build.sh
+Charltons-MacBook-Pro:TravisCI_example charlton$ cd Template/
+Charltons-MacBook-Pro:Template charlton$ ls
+makefile  src  test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make
+make: Nothing to be done for `all'.
+Charltons-MacBook-Pro:Template charlton$ make
+make: *** No rule to make target `src/./src/template_main.c.c', needed by `src/template_main.c'.  Stop.
+Charltons-MacBook-Pro:Template charlton$ make
+make: *** No rule to make target `src/./src/template_main.c.c', needed by `src/template_main.c'.  Stop.
+Charltons-MacBook-Pro:Template charlton$ make
+make: Circular src/template_main.c <- src/template_main.c dependency dropped.
+make: Nothing to be done for `all'.
+Charltons-MacBook-Pro:Template charlton$ make
+make: Nothing to be done for `all'.
+Charltons-MacBook-Pro:Template charlton$ ls 
+makefile  src  test_input.txt
+Charltons-MacBook-Pro:Template charlton$ ls 
+makefile  src  test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/project src/template_main.c
+chmod +x ./bin/./src/template_main.c
+chmod: cannot access './bin/./src/template_main.c': No such file or directory
+make: *** [project] Error 1
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make clean
+rm ./bin/./src/template_main.c
+rm: cannot remove './bin/./src/template_main.c': No such file or directory
+make: *** [clean] Error 1
+Charltons-MacBook-Pro:Template charlton$ make clean
+rm -r ./bin/
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/project src/template_main.c
+chmod +x ./bin/project
+Charltons-MacBook-Pro:Template charlton$ make
+make: Nothing to be done for `all'.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+$PROJNAME is []
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+$PROJNAME is []
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+$PROJNAME is []
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+$PROJNAME is []
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/template_main.c]
+$PROJNAME is []
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+make: *** No rule to make target `._src_template_main.c', needed by `all'.  Stop.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [._src_template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [._src_template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [_template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [__template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [./src/]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [template_main.c]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [template_main.c_]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [template_main.c_main]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+$PROJNAME is [template]
+$PROJSRC is [./src/template_main.c]
+make: `all' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make
+make: Circular template <- template dependency dropped.
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template 
+clang: error: no input files
+make: *** [template] Error 1
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+Charltons-MacBook-Pro:Template charlton$ clear
+
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+Charltons-MacBook-Pro:Template charlton$ make clean
+rm -r ./bin/
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+"/Users/charlton/Documents/TravisCI_example/Template"
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+"Building template in /Users/charlton/Documents/TravisCI_example/Template..."
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+"Building \"template\" in /Users/charlton/Documents/TravisCI_example/Template..."
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+"Building "template" in /Users/charlton/Documents/TravisCI_example/Template..."
+Charltons-MacBook-Pro:Template charlton$ make
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+Building "template" in /Users/charlton/Documents/TravisCI_example/Template...
+Charltons-MacBook-Pro:Template charlton$ make
+Make: Building "template" in /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p ./bin/
+gcc -std=c99 -o ./bin/template src/template_main.c
+chmod +x ./bin/template
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ ls
+bin  makefile  src  test_input.txt
+Charltons-MacBook-Pro:Template charlton$ rm test_input.txt 
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq (,)
+/bin/sh: -c: line 0: syntax error near unexpected token `,'
+/bin/sh: -c: line 0: `ifeq (,)'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq ()
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq (, "")
+/bin/sh: -c: line 0: syntax error near unexpected token `,'
+/bin/sh: -c: line 0: `ifeq (, "")'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq (,)
+/bin/sh: -c: line 0: syntax error near unexpected token `,'
+/bin/sh: -c: line 0: `ifeq (,)'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+makefile:25: *** missing separator.  Stop.
+Charltons-MacBook-Pro:Template charlton$ lear
+-bash: lear: command not found
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+makefile:25: *** missing separator.  Stop.
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq (,)
+/bin/sh: -c: line 0: syntax error near unexpected token `,'
+/bin/sh: -c: line 0: `ifeq (,)'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+"No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)"
+ifeq ("","")
+/bin/sh: -c: line 0: syntax error near unexpected token `"",""'
+/bin/sh: -c: line 0: `ifeq ("","")'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)
+ifneq ("","")
+/bin/sh: -c: line 0: syntax error near unexpected token `"",""'
+/bin/sh: -c: line 0: `ifneq ("","")'
+make: *** [test] Error 2
+Charltons-MacBook-Pro:Template charlton$ make test
+No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)
+Make: Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Charltons-MacBook-Pro:Template charlton$ make test
+No test input available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesnt exist)
+Make (Autobuild): Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild): Cencelling tests, as no test input is available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesn't exist)
+Make (Autobuild): Building "template" from /Users/charlton/Documents/TravisCI_example/Template...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Charltons-MacBook-Pro:Template charlton$ clear
+
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild): Building "template" from /Users/charlton/Documents/TravisCI_example/Template... \n
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild): Cencelling tests, as no test input is available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesn't exist) \n
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild): Building "template" from /Users/charlton/Documents/TravisCI_example/Template//Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild): Cencelling tests, as no test input is available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesn't exist)
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild): Cencelling tests, as no test input is available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesn't exist)
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Cancelling tests, as no test input is available! (/Users/charlton/Documents/TravisCI_example/Template/test_input.txt doesn't exist)
+Charltons-MacBook-Pro:Template charlton$ make clean
+Make (Autobuild - Clean): Removing /Users/charlton/Documents/TravisCI_example/Template/bin/...
+rm -rf /Users/charlton/Documents/TravisCI_example/Template/bin/
+Charltons-MacBook-Pro:Template charlton$ ls
+makefile  src
+Charltons-MacBook-Pro:Template charlton$ touch test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing has finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ clera
+-bash: clera: command not found
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing template against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Testing has finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Testing has finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make help
+Autobuild Makefile for Travis CI - Version 1.0
+(c) Charlton Trezevant 2017 - MIT License
+For detailed documentation, please run `cat /Users/charlton/Documents/TravisCI_example/Template/makefile` in your terminal
+make: `help' is up to date.
+Charltons-MacBook-Pro:Template charlton$ clera
+-bash: clera: command not found
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make help
+Autobuild Makefile for Travis CI - Version 1.0
+(c) 2017 Charlton Trezevant - MIT License
+For detailed documentation, please run `cat /Users/charlton/Documents/TravisCI_example/Template/makefile` in your terminal
+make: `help' is up to date.
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+echo ""
+
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Test): Testing "template" against provided input: /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "template" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/template < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+
+Charltons-MacBook-Pro:Template charlton$ make help
+Autobuild Makefile for Travis CI - Version 1.0
+(c) 2017 Charlton Trezevant - MIT License
+For detailed documentation, please run `cat /Users/charlton/Documents/TravisCI_example/Template/makefile` in your terminal
+
+Charltons-MacBook-Pro:Template charlton$ cat /Users/charlton/Documents/TravisCI_example/Template/makefile
+# Autobuild Makefile for Travis CI
+# (c) 2017 Charlton Trezevant - MIT License
+
+# Overview:
+# 	This file will cause Make to automatically detect and build any C source files
+# 	in the ./src/ directory whose name ends with `_main.c`.
+
+# Usage:
+#		To use this script,
+#
+
+AB_VERSION=1.0
+PROJSRC=$(wildcard ${CURDIR}/src/*_main.c)
+PROJNAME=$(subst _main.c,,$(subst ${CURDIR}/src/,,$(PROJSRC)))
+
+all:$(PROJNAME)
+
+$(PROJNAME):$(PROJSRC)
+	$(info Make (Autobuild - Compile): Building "${PROJNAME}" from $^...)
+	mkdir -p ${CURDIR}/bin/
+	gcc -std=c99 -o ${CURDIR}/bin/$@ $^
+	chmod +x ${CURDIR}/bin/$@
+	@echo ""
+
+test:$(PROJNAME)
+ifneq ("$(wildcard ${CURDIR}/test_input.txt)","")
+	$(info Make (Autobuild - Test): Testing "${PROJNAME}" against provided input: ${CURDIR}/test_input.txt...)
+	${CURDIR}/bin/$(PROJNAME) < ${CURDIR}/test_input.txt
+	$(info Make (Autobuild - Test): Tests for "${PROJNAME}" have finished.)
+	@echo ""
+else
+	$(info Make (Autobuild - Test): Will not test "${PROJNAME}", as no test input is available! (${CURDIR}/test_input.txt doesn't exist))
+	@echo ""
+endif
+
+clean:
+	$(info Make (Autobuild - Clean): Removing ${CURDIR}/bin/...)
+	rm -rf ${CURDIR}/bin/
+	@echo ""
+
+help:
+	$(info Autobuild Makefile for Travis CI - Version ${AB_VERSION})
+	$(info (c) 2017 Charlton Trezevant - MIT License)
+	$(info For detailed documentation, please run `cat ${CURDIR}/makefile` in your terminal)
+	@echo ""
+Charltons-MacBook-Pro:Template charlton$ clear
+
+Charltons-MacBook-Pro:Template charlton$ make lint
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+# Create a directory for our compiled binaries (./bin/)
+# -p tells makedir not to complain if that directory already exists
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+# Call GCC to compile your source(s)
+# This will produce a binary in ./bin/, with the name of your project
+# template is the project name foo, /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c is the full path to the source file foo_main.c
+# Note: the flag -std=c99 tells GCC to compile for C99 syntax (ISO/IEC 9899:1999)
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+# Set the execuable bit on the binary produced by GCC
+# In some cases, this may not always be necessary. But we'll do it anyways.
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+# Prints an empty line (newline)
+
+Make (Autobuild - Lint): Linting "template" source file: /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c (using scan-build)...
+scan-build gcc -std=c99 -c /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+scan-build: Using '/usr/bin/clang' for static analysis
+scan-build: Removing directory '/var/folders/34/03jlclmx57z2b84tw45m9c1h0000gn/T/scan-build-2017-12-04-145437-4633-1' because it contains no reports.
+scan-build: No bugs found.
+
+Charltons-MacBook-Pro:Template charlton$ make lint
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Make (Autobuild - Lint): Linting "template" source file: /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c (using scan-build)...
+scan-build gcc -std=c99 -c /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+scan-build: Using '/usr/bin/clang' for static analysis
+scan-build: Removing directory '/var/folders/34/03jlclmx57z2b84tw45m9c1h0000gn/T/scan-build-2017-12-04-145520-4674-1' because it contains no reports.
+scan-build: No bugs found.
+
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make lint
+Make (Autobuild - Lint): Linting "template" source file: /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c (using scan-build)...
+scan-build gcc -std=c99 -c /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+scan-build: Using '/usr/bin/clang' for static analysis
+scan-build: Removing directory '/var/folders/34/03jlclmx57z2b84tw45m9c1h0000gn/T/scan-build-2017-12-04-145643-4700-1' because it contains no reports.
+scan-build: No bugs found.
+
+Charltons-MacBook-Pro:Template charlton$ make lint
+Make (Autobuild - Lint): Linting "template" source file: /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c (using scan-build)...
+scan-build gcc -std=c99 -c /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+scan-build: Using '/usr/bin/clang' for static analysis
+scan-build: Removing directory '/var/folders/34/03jlclmx57z2b84tw45m9c1h0000gn/T/scan-build-2017-12-04-150551-4795-1' because it contains no reports.
+scan-build: No bugs found.
+
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+/Users/charlton/Documents/TravisCI_example/Template/src/template_main.c:16:16: warning: format specifies type 'char *' but the argument has type 'char (*)[10]' [-Wformat]
+  scanf(" %s", &name);
+          ~~   ^~~~~
+1 warning generated.
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name?Charlton
+Hi Charlton! Could you give me two integers to add together?The sum of 0 and 0 is 0. Neat!Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name? Charlton
+Hi Charlton! Could you give me two integers to add together?Number 1: ^C
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name? Charlton
+Hi Charlton! Could you give me two integers to add together?
+Number 1: 1
+Number 2: 4
+The sum of 1 and 4 is 5. Neat!Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name? Charlton
+Hi Charlton! Could you give me two integers to add together?
+Number 1: 1
+Number 2: 2
+The sum of 1 and 2 is 3. Neat!Charltons-MacBook-Pro:Template charlton$ make clean
+Make (Autobuild - Clean): Removing /Users/charlton/Documents/TravisCI_example/Template/bin/...
+rm -rf /Users/charlton/Documents/TravisCI_example/Template/bin/
+
+Charltons-MacBook-Pro:Template charlton$ make
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name? Charlton
+Hi Charlton! Could you give me two integers to add together?
+Number 1: 1
+Number 2: 4
+The sum of 1 and 4 is 5. Neat!
+Goodbye, Charlton
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make 
+Make (Autobuild - Compile): Building "template" from /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/template /Users/charlton/Documents/TravisCI_example/Template/src/template_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/template
+
+Charltons-MacBook-Pro:Template charlton$ ./bin/template 
+What is your name? Charlton
+
+Hi Charlton! Could you give me two integers to add together?
+Number 1: 1
+Number 2: 4
+The sum of 1 and 4 is 5. Neat!
+
+Goodbye, Charlton
+Charltons-MacBook-Pro:Template charlton$ nano test_input.txt 
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "mathlesson" from /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+
+Make (Autobuild - Test): Testing "mathlesson" against provided input from /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "mathlesson" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+What is your name? 
+Hi Charlton! Could you give me two integers to add together?
+Number 1: Number 2: The sum of 4 and 2 is 6. Neat!
+
+Goodbye, Charlton
+
+Charltons-MacBook-Pro:Template charlton$ make teest
+make: *** No rule to make target `teest'.  Stop.
+Charltons-MacBook-Pro:Template charlton$ make test
+Make (Autobuild - Compile): Building "mathlesson" from /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+
+Make (Autobuild - Test): Testing "mathlesson" against provided input from /Users/charlton/Documents/TravisCI_example/Template/test_input.txt...
+Make (Autobuild - Test): Tests for "mathlesson" have finished.
+/Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson < /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+What is your name? 
+Hi Charlton! Could you give me two integers to add together?
+Number 1: Number 2: 
+The sum of 4 and 2 is 6. Neat!
+
+Goodbye, Charlton
+
+Charltons-MacBook-Pro:Template charlton$ make etest
+Make (Autobuild): Created empty test_input file.
+touch /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make empty
+Make (Autobuild): Creating empty test_input file...
+touch /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ make etf
+Make (Autobuild): Creating empty test_input file...
+touch /Users/charlton/Documents/TravisCI_example/Template/test_input.txt
+Charltons-MacBook-Pro:Template charlton$ clear
+
+Charltons-MacBook-Pro:Template charlton$ ls
+bin  makefile  src  template_main.o  test_input.txt
+Charltons-MacBook-Pro:Template charlton$ nano test_input.txt 
+Charltons-MacBook-Pro:Template charlton$ make clean
+Make (Autobuild - Clean): Removing /Users/charlton/Documents/TravisCI_example/Template/bin/...
+rm -rf /Users/charlton/Documents/TravisCI_example/Template/bin/
+
+Charltons-MacBook-Pro:Template charlton$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Charltons-MacBook-Pro:Template charlton$ make lint
+Make (Autobuild - Lint): Linting "mathlesson" source file: /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c (using scan-build)...
+scan-build gcc -std=c99 -c /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c
+scan-build: Using '/usr/bin/clang' for static analysis
+scan-build: Removing directory '/var/folders/34/03jlclmx57z2b84tw45m9c1h0000gn/T/scan-build-2017-12-04-154751-6212-1' because it contains no reports.
+scan-build: No bugs found.
+
+Charltons-MacBook-Pro:Template charlton$ make exec
+Make (Autobuild - Compile): Building "mathlesson" from /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c...
+mkdir -p /Users/charlton/Documents/TravisCI_example/Template/bin/
+gcc -std=c99 -o /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson /Users/charlton/Documents/TravisCI_example/Template/src/mathlesson_main.c
+chmod +x /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+
+./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+make: ./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson: No such file or directory
+make: *** [exec] Error 1
+Charltons-MacBook-Pro:Template charlton$ ls 
+bin  makefile  mathlesson_main.o  src  template_main.o	test_input.txt
+Charltons-MacBook-Pro:Template charlton$ ls bin/
+mathlesson
+Charltons-MacBook-Pro:Template charlton$ ./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+-bash: ./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson: No such file or directory
+Charltons-MacBook-Pro:Template charlton$ . ./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+-bash: ./Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson: No such file or directory
+Charltons-MacBook-Pro:Template charlton$ . ./Users/charlton/Documents/TravisCI_example/Template/bin/
+Charltons-MacBook-Pro:Template charlton$ ls
+bin  makefile  mathlesson_main.o  src  template_main.o	test_input.txt
+Charltons-MacBook-Pro:Template charlton$ ls bin/
+mathlesson
+Charltons-MacBook-Pro:Template charlton$ ./bin/mathlesson 
+What is your name? ^C
+Charltons-MacBook-Pro:Template charlton$ cd bin
+Charltons-MacBook-Pro:bin charlton$ pwd
+/Users/charlton/Documents/TravisCI_example/Template/bin
+Charltons-MacBook-Pro:bin charlton$ . /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+-bash: ????: command not found
+Charltons-MacBook-Pro:bin charlton$ /Users/charlton/Documents/TravisCI_example/Template/bin/mathlesson
+What is your name? ^C
+Charltons-MacBook-Pro:bin charlton$ make run
+make: *** No rule to make target `run'.  Stop.
+Charltons-MacBook-Pro:bin charlton$ 
+
+
+
+
+
+
+
+
