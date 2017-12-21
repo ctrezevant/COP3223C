@@ -9,6 +9,6 @@
 #include <stdio.h>
 
 int main(){
-  ldkfnsdlfkn
+  printf("Wow!");
   return 0;
 }
